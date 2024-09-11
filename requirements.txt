@@ -1,0 +1,11 @@
+chainlit
+groq
+python-dotenv
+Pillow
+pyheif
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langsmith
+
