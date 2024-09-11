@@ -56,7 +56,7 @@ edit_message = true
 name = "TKM Technology Assistant"
 
 # Description of the assistant. This is used for HTML tags.
-description = "A Chat interfase to talk with one of many Open Source AI Models from Groq"
+description = "A Chat interfase to talk with one of many Open Source AI Models from Groq and other AI Features"
 
 # Large size content are by default collapsed for a cleaner ui
 default_collapse_content = true
@@ -65,7 +65,7 @@ default_collapse_content = true
 hide_cot = false
 
 # Link to your github repo. This will add a github button in the UI's header.
-github = "https://github.com/Hovup-FO/TKM-Groq-Interfase"
+github = "https://github.com/Hovup-FO/TKM-Groq-Connector"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
