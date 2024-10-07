@@ -24,4 +24,4 @@ pageEnabled = false
 buttonEnabled = false
 
 [objectStorage]
-defaultBucketID = "replit-objstore-77596402-e198-41da-a0fd-681f5c96073d"
+defaultBucketID = "replit-objstore-bd32a85a-05ed-4c08-ae17-72567ff271e5"

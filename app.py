@@ -16,7 +16,7 @@ load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 API_ENDPOINT = "https://api.groq.com/openai/v1/audio/transcriptions"
 TEXT_MODEL_ID = "llama-3.1-70b-versatile"  # Default text model ID
-VISION_MODEL_ID = "llava-v1.5-7b-4096-preview"
+VISION_MODEL_ID = "llama-3.2-11b-vision-preview"
 AUDIO_MODEL_ID = "whisper-large-v3"  # Audio model ID
 CURRENT_MODEL_ID = TEXT_MODEL_ID  # Default to text model on startup
 
@@ -138,7 +138,7 @@ async def start():
             Select(
                 id="Vision Model",
                 label="Groq - Vision Models",
-                values=[VISION_MODEL_ID],
+                values=[VISION_MODEL_ID, "llava-v1.5-7b-4096-preview"],
                 initial_index=0
             ),
             Select(
@@ -162,10 +162,10 @@ async def start():
 
     elements = [
         cl.Pdf(name="brochure", display="side", path="./docs/brochure.pdf"),
-        cl.Video(name="video", url="https://www.youtube.com/watch?v=vyMkqxCOVPY", display="side")
+        cl.Video(name="video", url="https://www.youtube.com/watch?v=zm1E_PSz__0", display="side")
     ]
 
-    await cl.Message(content="I am ready to answer...or take a look at our brochure, or video, if you want to record an audio message, press the recording button (within the prompt) to start recording and press the red recording gadget to stop it. The audio will be sent to us for conversion to text. You can also activate the AI Agent for current events or upload an image to ask for its analysis:", elements=elements).send()
+    await cl.Message(content="I am ready to answer...or take a look to our video, if you want to record an audio message, press the recording button (within the prompt) to start recording and press the red recording gadget to stop it. The audio will be sent to us for conversion to text. You can also activate the AI Agent for current events or upload an image to ask for its analysis:", elements=elements).send()
 
 @cl.on_settings_update
 async def handle_settings_update(settings: dict):
